@@ -62,5 +62,5 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  Math.floortotal/contestants
+  total/contestants.to_i
 end
