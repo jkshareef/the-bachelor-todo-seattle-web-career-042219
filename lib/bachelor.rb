@@ -57,4 +57,8 @@ def get_average_age_for_season(data, season)
       info.collect do |hash|
         total += hash["age"].to_i
         contestants += 1
+      end
+    end
+  end
+  total/contestants
 end
