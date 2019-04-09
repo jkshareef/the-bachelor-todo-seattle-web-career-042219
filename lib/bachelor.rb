@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data.collect do |season_number, info|
     binding.pry
-    if season_number.split[1].to_i == season
+    if season_number == season
       info.collect do |hash|
         binding.pry
         if hash["status"] == "Winner"
