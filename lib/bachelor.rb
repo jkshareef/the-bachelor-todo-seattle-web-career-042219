@@ -2,7 +2,6 @@ require 'pry'
 def get_first_name_of_season_winner(data, season)
   # code here
   data.collect do |season_number, info|
-    binding.pry
     if season_number == season
       info.collect do |hash|
         binding.pry
