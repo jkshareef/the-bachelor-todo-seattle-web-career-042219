@@ -51,13 +51,13 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-  contestants = 0
-  total = 0
+  contestants = 0.0
+  total = 0.0
   
   data.collect do |season_number, info|
     if season_number == season
       info.collect do |hash|
-        total += hash["age"].to_i
+        total += hash["age"].to_f
         contestants += 1
       end
     end
