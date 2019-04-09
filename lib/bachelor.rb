@@ -5,7 +5,7 @@ def get_first_name_of_season_winner(data, season)
     if season_number == season
       info.collect do |hash|
         if hash["status"] == "Winner"
-          return data[season_number][hash]["name"].split[1]
+          return hash["name"].split[0]
         end
       end
     end
